@@ -9,11 +9,9 @@ Matters (Hughes, 1990) and The Essence of Functional Programming (Wadler, 1992).
 The idea then appeared forgotten until making a recent emergence in industry, as
 businesses learn about a correlation between technical excellence and business
 outcomes. Today, companies of all sizes are exploiting the practical advantages
-of Functional Programming to efficiently achieve their goals and obtain a
-significant advantage on their competitors.
+of Functional Programming to achieve their goals and gain a competitive
+advantage.
 
-This talk will provide a definition of Functional Programming, an introduction
-to some of the terminology that is used and importantly, how the ideas behind
-FP are being used to achieve business objectives. It is aimed at an audience 
-looking to acquire a vocabulary of the technical concepts of FP, so that they
-can be effectively applied in practice.
+This talk will define Functional Programming, introduce some of the terminology
+that is used and importantly, how FP is being used to achieve business
+objectives.
