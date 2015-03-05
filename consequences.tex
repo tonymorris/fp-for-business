@@ -1,0 +1,90 @@
+\begin{frame}
+\frametitle{Consequences of functional programming}
+\begin{block}{Reasoning}
+\begin{itemize}
+\item<1-> since our program expressions are \emph{referentially transparent}, we may reason about each program part independently of all the others.
+\item<2-> this idea is called \emph{equational reasoning}.
+\item<3-> equational reasoning gives to the ability to comprehend our programs; small or large.
+\end{itemize}
+\end{block}
+\end{frame}
+
+\begin{frame}
+\frametitle{Consequences of functional programming}
+\begin{block}{Requirements change}
+\begin{itemize}
+\item<1-> our program solution, at any level, is the composition of smaller, discrete programs \ldots
+\item<2-> \ldots only if \emph{referential transparency is preserved}.
+\item<3-> if a requirement changes, we need only change those \textbf{independent parts} which correlate to that change.
+\end{itemize}
+\end{block}
+\end{frame}
+
+\begin{frame}
+\frametitle{Consequences of functional programming}
+\begin{block}{Programs are sub-programs and can be reused}
+\begin{itemize}
+\item<1-> since programs are (sometimes provably) delineated from others, the opportunity to reuse arises.
+\item<2-> functional programming gives rise to exploration of \emph{principled abstraction}.
+\end{itemize}
+\end{block}
+\end{frame}
+
+\begin{frame}[fragile]
+\frametitle{Consequences of functional programming}
+\begin{block}{Testing in isolation}
+\begin{itemize}
+\item<1-> since functions do not perform \emph{side-effects}, they can be tested in isolation.
+\item<2-> we can perform testing using \emph{universal quantification}
+\begin{lstlisting}[style=haskell,mathescape,basicstyle=\scriptsize]
+> ((x ++ y) ++ z == x ++ (y ++ z))
+OK, passed 100 tests.
+\end{lstlisting}
+\end{itemize}
+\end{block}
+\end{frame}
+
+\begin{frame}
+\frametitle{Consequences of functional programming}
+\begin{block}{Performance}
+\begin{itemize}
+\item<1-> if programs are made of functions, they may be rearranged arbitrarily without altering the program outcome.
+\item<2-> a compiler may rearrange a program structure (but not outcome) to give optimal performance.
+\item<3-> existing runtime compilers do this to a small extent e.g. Java VM, .NET CLR
+\end{itemize}
+\end{block}
+\end{frame}
+
+\begin{frame}
+\frametitle{Consequences of functional programming}
+\begin{block}{Proof by parametricity \cite{wadler1989theorems}}
+\begin{itemize}
+\item<1-> functions give rise to proof techniques, such as \emph{parametricity}.
+\item<2-> parametricity is about deriving \emph{theorems} from \emph{polymorphic types}.
+\end{itemize}
+\end{block}
+\end{frame}
+
+\begin{frame}
+\frametitle{Consequences of functional programming}
+\framesubtitle{Parametricity}
+\begin{block}{For example}
+Given a function with a type \lstinline{(List a -> List a)}, a reader can immediately derive
+\end{block}
+\begin{block}{Theorem}
+Every element in the result list appears in the input list.
+\end{block}
+
+\end{frame}
+
+\begin{frame}
+\frametitle{Consequences of functional programming}
+\framesubtitle{Parametricity}
+\begin{block}{Documentation}
+\begin{itemize}
+\item <1-> functions give rise to parametricity.
+\item <2-> parametricity gives rise to proofy-carrying theorems.
+\item <3-> proof is a reliable and efficient method of program code comprehension.
+\end{itemize}
+\end{block}
+\end{frame}

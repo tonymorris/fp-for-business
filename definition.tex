@@ -1,0 +1,64 @@
+\begin{frame}
+\frametitle{What does FP mean?}
+\begin{itemize}
+  \item<1-> functional programming is a simple and principled thesis.
+  \item<1-> from this thesis, many practical advantages follow.
+  \item<2-> the practical consequences \textbf{do not define} functional programming.
+  \item<3-> \textbf{all} programs achieve the principle of FP to some extent.
+\end{itemize}
+\end{frame}
+
+\begin{frame}[fragile]
+\frametitle{What does FP mean?}
+\framesubtitle{Referential Transparency}
+\begin{block}{Placing \lstinline{expression} under test for referential transparency}
+\scriptsize
+\begin{lstlisting}[mathescape]
+result = expression(args)
+$\ldots$
+arbitrary1(result)
+$\ldots$
+arbitrary2(result)
+\end{lstlisting}
+\end{block}
+\begin{block}{Refactor the program \textemdash has the program changed?}
+\scriptsize
+\begin{lstlisting}[mathescape]
+$\ldots$
+arbitrary1(expression(args))
+$\ldots$
+arbitrary2(expression(args))
+\end{lstlisting}
+\end{block}
+\end{frame}
+
+\begin{frame}[fragile]
+\frametitle{What does FP mean?}
+\framesubtitle{Am I functional programming?}
+\begin{block}{To what extent does my program exhibit referential transparency?}
+\begin{itemize}
+  \item<1-> to what extent can I replace \emph{expressions} with their \emph{values}?
+  \item<2-> to what extent am I functional programming? \cite{wadler1992essence}
+\end{itemize}
+\end{block}
+\end{frame}
+
+\begin{frame}[fragile]
+\frametitle{What does FP mean?}
+\framesubtitle{Tools}
+\begin{block}{FAQ \#1}
+\begin{itemize}
+  \item<1-> is (or is not) this programming language a ``functional programming language?'' \cite{sabry1998purely}
+  \item<2-> I still do not know what one of these is.
+  \item<3-> However\ldots
+\end{itemize}
+\end{block}
+\end{frame}
+
+\begin{frame}[fragile]
+\frametitle{What does FP mean?}
+\framesubtitle{Tools}
+\begin{block}{We might instead ask}
+to what extent do my tools (including programming languages) provide support for me to exploit the principle and practical consequences that arise from functional programming?
+\end{block}
+\end{frame}
