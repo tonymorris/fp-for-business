@@ -11,9 +11,27 @@ skipabove=\baselineskip]{TitleBox}
 
   \begin{frame}[plain] 
 
-  \begin{center}
-  {\huge \inserttitle}
-  \end{center}
+  \begin{TitleBox}
+    \begin{center}
+    {\huge \inserttitle}
+
+    \hspace{1em}
+    
+    {\huge \insertsubtitle}
+    \end{center}
+  \end{TitleBox}
+
+  \vspace{3em}
+
+  \begin{Conference}
+    \begin{center}
+    \tiny{NICTA Seminar Series}
+
+    \hspace{1em}
+
+    {\insertauthor}
+    \end{center}
+  \end{Conference}
 
   \end{frame}
 }
