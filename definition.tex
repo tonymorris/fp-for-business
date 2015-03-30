@@ -7,3 +7,26 @@
   \item<3-> \textbf{All} programs achieve the principle of FP to some extent.
 \end{itemize}
 \end{frame}
+
+\begin{frame}[fragile]
+\frametitle{What does FP mean?}
+\framesubtitle{Referential Transparency}
+\begin{block}{Placing \lstinline{expression} under test for referential transparency}
+\scriptsize
+\begin{lstlisting}[mathescape]
+result = expression(args)
+$\ldots$
+arbitrary1(result)
+$\ldots$
+arbitrary2(result)
+\end{lstlisting}
+\end{block}
+\begin{block}{Refactor the program \textemdash has the program changed?}
+\scriptsize
+\begin{lstlisting}[mathescape]
+arbitrary1(expression(args))
+$\ldots$
+arbitrary2(expression(args))
+\end{lstlisting}
+\end{block}
+\end{frame}
