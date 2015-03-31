@@ -1,10 +1,10 @@
 \begin{frame}
 \frametitle{What does FP mean?}
 \begin{itemize}
-  \item<1-> Functional Programming is a simple and principled thesis.
-  \item<1-> From this thesis, many practical advantages follow.
-  \item<2-> The practical consequences \textbf{do not define} Functional Programming.
-  \item<3-> \textbf{All} programs achieve the principle of FP to some extent.
+  \item<1-> functional programming is a simple and principled thesis.
+  \item<1-> from this thesis, many practical advantages follow.
+  \item<2-> the practical consequences \textbf{do not define} functional programming.
+  \item<3-> \textbf{all} programs achieve the principle of FP to some extent.
 \end{itemize}
 \end{frame}
 
@@ -24,9 +24,21 @@ arbitrary2(result)
 \begin{block}{Refactor the program \textemdash has the program changed?}
 \scriptsize
 \begin{lstlisting}[mathescape]
+$\ldots$
 arbitrary1(expression(args))
 $\ldots$
 arbitrary2(expression(args))
 \end{lstlisting}
+\end{block}
+\end{frame}
+
+\begin{frame}[fragile]
+\frametitle{What does FP mean?}
+\framesubtitle{Am I functional programming?}
+\begin{block}{To what extent does my program exhibit referential transparency?}
+\begin{itemize}
+  \item<1-> to what extent can I replace \emph{expressions} with their \emph{values}?
+  \item<2-> to what extent am I functional programming?
+\end{itemize}
 \end{block}
 \end{frame}
