@@ -1,6 +1,44 @@
 \begin{frame}
 \frametitle{Principles of functional programming}
-todo
+\begin{block}{Frege's principle of compositionality}
+\begin{itemize}
+\item<1-> a program is the composition of its constituent programs.
+\item<2-> modifying a program is the act of modifying the necessary part.
+\item<3-> the concept of a \emph{program part} is \emph{well-formed and measurable}.
+\end{itemize}
+\end{block}
+\end{frame}
+
+\begin{frame}
+\frametitle{Principles of functional programming}
+\begin{block}{Achieving program composition}
+\begin{itemize}
+\item<1-> snake-oil sellers will point you at how to achieve program composition.
+\item<2-> or more likely, how to manage failure of having achieved it.
+          \begin{itemize}
+          \item \tiny{object-oriented hoo-haa}
+          \item \tiny{agile and lean and ``oh look over there!''}
+          \end{itemize}
+\item<3-> functional programming is a necessity.
+\end{itemize}
+\end{block}
+\end{frame}
+
+\begin{frame}[fragile]
+\frametitle{Principles of functional programming}
+\begin{block}{Example}
+\begin{lstlisting}[style=java,mathescape,basicstyle=\scriptsize]
+if(`player.score` `>` `12`)
+  player.setSwizzle(`1000`);
+else
+  player.setSwizzle(`11`);
+\end{lstlisting}
+\end{block}
+\begin{block}{refactor program}
+\begin{lstlisting}[style=java,mathescape,basicstyle=\scriptsize]
+player.setSwizzle(`player.score` `>` `12` `?` `1000` `:` `11`);
+\end{lstlisting}
+\end{block}
 \end{frame}
 
 % program composition
